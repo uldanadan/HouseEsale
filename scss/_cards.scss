@@ -1,0 +1,38 @@
+.cards {
+    padding: 74px 0 99px;
+    background-color: $background_color;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        position: relative;
+        width: 398.68px;
+        height: 547px;
+        box-shadow: 0px 4px 59px -14px rgba(171, 124, 0, 0.29);
+    }
+    &__img1 {
+        background: url('../images/card1.jpg') center/contain no-repeat;
+    }
+    &__content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 133px;
+        background: $main_color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img {
+            width: 10.5px;
+            height: 13.5px;
+            border-radius: 50%;
+            background: $yellow_color;
+            padding: 12px 12.5px 12.5px 15px;
+        }
+    }
+    &__text {
+        margin-left: 32px;
+        @include font-option($main_text_color, 14px, 19px, normal);
+    }
+}

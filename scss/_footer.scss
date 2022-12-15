@@ -1,0 +1,54 @@
+.footer {
+    padding: 45px 0 159px;
+    background: #093A7A;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        &-link {
+            text-decoration: none;
+            @include font-option(#CACACA, 16px, 19px, normal);
+        }
+    }
+    &__title {
+        padding: 28px 0 23px;
+        @include font-option($main_color, 24px, 33px, normal);
+    }
+    &__text {
+        display: flex;
+        margin-bottom: 32px;
+    }
+    &__cities {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            margin-bottom: 5px;
+            font-weight: 400;
+            @include font-option(#E5E5E5, 20px, 23px, normal);
+        }
+        &-text {
+            text-decoration: none;
+            @include font-option(#CACACA, 16px, 19px, normal);
+            &:not(:first-child) {
+                margin-right: 40px;
+            }
+        }
+    }
+    &__hr {
+        border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 0 0;
+        &-logo {
+            display: block;
+            width: 110px;
+            height: 24px;
+            background: url('../images/logo.svg');
+        }
+        &-text {
+            @include font-option(#CACACA, 11px, 13px, normal);
+        }
+    }
+}

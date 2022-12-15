@@ -1,0 +1,42 @@
+.book {
+    background: $background_color;
+    & .form {
+        background: #FFF5DA;
+        text-align: center;
+        padding: 127px 0 94px;
+
+    }
+    &__title {
+        @include font-title;
+    }
+    &__text {
+        padding: 15px 0 20px;
+        @include font-option(#646464, 29px, 40px, normal);
+    }
+    &__inputbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & input {
+            width: 460px;
+            height: 78px;
+            border: 1px solid $main_color;
+            padding: 0 190px 0 70px;
+        }
+        & img {
+            position: absolute;
+            left: 23%;
+        }
+    }
+    &__button {
+        position: absolute;
+        right: 23%;
+        background: $yellow_color;
+        border: none;
+        padding: 10px 50px 11px 44px;
+        font-size: 29px;
+        line-height: 40px;
+        cursor: pointer;
+    }
+}

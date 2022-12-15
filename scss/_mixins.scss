@@ -1,0 +1,43 @@
+@mixin font-option($color, $size, $height, $space) {
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+    white-space: $space;
+}
+
+@mixin font-title {
+    color: $main_title_color;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+$breakpoints: (
+    'xl': 1250px,
+    'lg': 930px,
+    'md': 600px,
+    'sm': 400px,
+);
+
+@mixin xl {
+    @media (max-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, 'md')) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, 'sm')) {
+        @content;
+    }
+}

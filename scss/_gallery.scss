@@ -1,0 +1,15 @@
+.gallery {
+    background: $background_color;
+    padding: 122px 0 128px;
+    &__title {
+        padding: 0 0 45px;
+        @include font-title;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 21px;
+    }
+}

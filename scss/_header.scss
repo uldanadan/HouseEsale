@@ -1,0 +1,27 @@
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 42px 0;
+    background: transparent;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: block;
+        width: 110px;
+        height: 24px;
+        background: url('../images/logo.svg');
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-link {
+            text-decoration: none;
+            margin-right: 42px;
+            @include font-option($main_color, 18px, 21px, normal);
+        }
+    }
+}

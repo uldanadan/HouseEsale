@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    margin:0;
+    font-family: $main_font_family;
+}
+
+h2, p, a {
+    margin: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+@import 'header';
+@import 'promo';
+@import 'cards';
+@import 'company';
+@import 'book';
+@import 'gallery';
+@import 'footer';
+@import 'mobile';

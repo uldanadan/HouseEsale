@@ -1,0 +1,43 @@
+.company {
+    padding: 0 0 100px;
+    background: $background_color;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        padding: 0 0 78px;
+        @include font-option($main_title_color, 36px, 49px, normal);
+    }
+    &__text {
+        margin-left: 31px;
+    }
+    &__info {
+        margin-bottom: 55px;
+        display: flex;
+        align-items: center;
+        &-title {
+            @include font-title;
+        }
+        &-text {
+            @include font-option(#4A4A4A, 21px, 29px, normal);
+        }
+    }
+    &__content {
+        position: relative;
+    }
+    &__rectangle {
+        position: relative;
+        content: '';
+        width: 476.62px;
+        height: 431px;
+        background: $yellow_color;
+        margin-top: 70px;
+        margin-right: 22px;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

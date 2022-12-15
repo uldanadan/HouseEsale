@@ -1,0 +1,20 @@
+.promo {
+    position: relative;
+    background: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%);
+    & img {
+        width: 100%;
+        mix-blend-mode: overlay;
+    }
+    &__container {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+    &__title {
+        padding: 0 0 21px;
+        @include font-option($main_color, 60px, 82px, pre-line);
+    }
+    &__text {
+        @include font-option($main_color, 29px, 40px, pre-line);
+    }
+}
